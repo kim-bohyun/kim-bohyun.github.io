@@ -1,0 +1,19 @@
+<h1>Player VS Computer</h1>
+<div>
+    <span>
+        <h3>Player</h3>
+        <%= @playerImg %>
+    </span>
+    <span>
+        <h3>Computer</h3>
+        <%= @comImg %>
+    </span>
+</div>
+<div>
+    <h3><%= @result %></h3>
+    <span>다시 시도하시겠습니까?</span>
+    <span>
+        <button onclick="window.location.href = '/home/index';">Yes</button>
+        <button onclick="alert('다음에 다시 만나요~~')">No</button>
+    </span>
+</div>
