@@ -1,13 +1,13 @@
 <h1>Player VS Computer</h1>
 <div>
-    <span>
+    <div style="display: inline-block">
         <h3>Player</h3>
-        <%= @playerImg %>
-    </span>
-    <span>
+        <img src="<%= @playerImg %>" width="100" height="100"/>
+    </div>
+    <div style="display: inline-block">
         <h3>Computer</h3>
-        <%= @comImg %>
-    </span>
+        <img src="<%= @comImg %>" width="100" height="100"/>
+    </div>
 </div>
 <div>
     <h3><%= @result %></h3>

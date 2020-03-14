@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   end
 
   def result
-    @player = params[:player]
+    @player = params[:player].to_i
     
     @computer = (1..3).to_a.sample(1)[0]
     
@@ -15,7 +15,7 @@ class HomeController < ApplicationController
     if (@player == @computer)
       @result = "DRAW"
       
-    elsif (@player == 1 && @computer == 3) || (@player == 2 && @computer == 1) || (@player == 3 && @computer == 2)
+    elsif (@player == 1 && @computer == 2) || (@player == 2 && @computer == 3) || (@player == 3 && @computer == 1)
       @result = "WIN!!"
     
     else
